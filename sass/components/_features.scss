@@ -9,11 +9,13 @@
 }
 
 .features {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
   padding-left: 0;
   margin: 0;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features__icons {
@@ -25,13 +27,13 @@
   margin-bottom: 30px;
 }
 
-.features__list {
-  margin-right: 30px;
+// .features__list {
+//   margin-right: 30px;
 
-  .features__list:last-child {
-    margin-right: 0;
-  }
-}
+//   .features__list:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .features__title {
   margin-top: 0px;
@@ -43,6 +45,7 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 .features__text {

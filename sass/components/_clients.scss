@@ -1,32 +1,39 @@
 .client__title {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .client {
+  @extend %list;
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  // margin: 0;
+  // padding: 0;
+  // list-style-type: none;
 }
 
 .client__list {
-  margin-right: 30px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // margin-right: 30px;
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .client__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: center;

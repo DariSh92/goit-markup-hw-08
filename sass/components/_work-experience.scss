@@ -5,6 +5,7 @@
 
   &:nth-child(3) {
     padding-top: 0;
+    display: none;
   }
 }
 
@@ -17,12 +18,14 @@
 }
 
 .example {
+  // display: none;
   list-style: none;
   padding-left: 0;
   margin: 0;
-  display: flex;
+  // display: flex;
   width: 370px;
 }
+
 .example__text {
   margin: 0;
 }

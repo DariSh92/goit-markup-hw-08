@@ -1,11 +1,11 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  background-color: var(--primary-white-color);
-}
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 1200px;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   background-color: var(--primary-white-color);
+// }
 
 .header {
   margin-top: 0;
@@ -72,6 +72,7 @@
   margin-left: 50px;
 }
 .nav-menu__item {
+  @extend %list;
   margin-left: 50px;
   position: relative;
 }

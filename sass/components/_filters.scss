@@ -34,6 +34,7 @@
 }
 
 .filters__list-item {
+  @extend %list;
   margin-left: 8px;
 
   .filters__list-item:first-child {
