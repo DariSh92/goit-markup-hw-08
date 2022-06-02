@@ -20,9 +20,17 @@
             <nav class="main-nav">
                 <a href="" class="logo" lang="en">Web<span class="logo__header">Studio</span>
                 </a>
+                <button type="buton" class="menu-button is-open" data-menu-button> 
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/icon-close40.svg#icon-close40"></use>
+                        <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+                    </svg>
+
+                </button>
+
            
         <!-- Navigation -->
-    <div class="mobile__menu">
+    <div class="mobile__menu is-open" data-menu>
 
             <ul class="nav-menu list">
                 <li class="nav-menu__item">
@@ -38,7 +46,7 @@
                 </li>  
             </ul>
 
-            </nav>
+            <!-- </nav> -->
             <!-- Header contacts -->
 
      <ul class="contacts__header">
@@ -61,6 +69,7 @@
         </li>
     </ul>
     </div>
+    </nav>
 </div>
 </header>
 <main>
@@ -543,5 +552,6 @@
     </div>
   
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
 </html>

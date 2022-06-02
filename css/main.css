@@ -77,7 +77,46 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   border: 1px solid #ececec;
+  position: relative;
   background: var(--primary-white-color);
+}
+
+.menu-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 22px;
+  right: 23px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-white-color);
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-white-color);
+}
+
+.mobile__menu.is-open {
+  display: block;
 }
 
 .nav-menu__link {
@@ -128,9 +167,7 @@ body {
 }
 
 .main-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,6 +688,7 @@ body {
 }
 
 .example {
+  display: none;
   list-style: none;
   padding-left: 0;
   margin: 0;
