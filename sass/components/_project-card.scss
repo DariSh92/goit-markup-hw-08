@@ -1,7 +1,9 @@
 .projects__card-list {
-  width: 370px;
-  margin-right: 30px;
+  max-width: 100%;
+  // width: 370px;
+  // margin-right: 30px;
   margin-bottom: 30px;
+  width: 100%;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -13,15 +15,17 @@
 
 .img-wrapper {
   width: 100%;
-  height: 294px;
+  // height: 294px;
+  height: auto;
   position: relative;
   overflow: hidden;
-}
 
-.img-wrapper img {
-  display: block;
-  position: relative;
-  /* z-index: 1; */
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* z-index: 1; */
+  }
 }
 
 .img__wrapper-hidden-text {

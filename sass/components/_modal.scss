@@ -35,6 +35,10 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--time-function);
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 }
 
 .modal-exit {

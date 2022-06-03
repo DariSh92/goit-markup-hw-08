@@ -15,49 +15,83 @@
 <body>
             <header class="header">
                 <div class="container main-nav">
-                    <nav class="main-nav">
-                        <a href="" class="logo" lang="en">Web<span class="logo__header">Studio</span>
-                        </a>
-
-            <!-- Navigation -->
-
-            <ul class="nav-menu list">
-                <li class="nav-menu__item">
-                    <a href="./index.html" class="nav-menu__link">Студио</a>
-                </li>
+                    <a href="" class="logo" lang="en">Web<span class="logo__header">Studio</span>
+                    </a>
+                    <nav class="mobile__nav">
+                        <button type="buton" class="menu-button" data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon-cross" href="./images/icon-close40.svg#icon-close40"></use>
+                                <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+                            </svg>
             
-                <li class="nav-menu__item">
-                    <a href="" class="nav-menu__link-active">Портфолио</a>
-                </li>
+                        </button>
             
-                <li class="nav-menu__item">
-                    <a href="" class="nav-menu__link">Контакты</a>
-                </li>
             
-            </ul>
-        </nav>
-        <!-- Header contacts -->
-
+<!-- Navigation -->
+    <div class="mobile__menu" data-menu>
+<!-- <div class="mobile__menu-modal"> -->
+        <ul class="nav-menu list">
+            <li class="nav-menu__item">
+                <a href="" class="nav-menu__link-active">Студия</a>
+            </li>
+            
+            <li class="nav-menu__item">
+                <a href="./portfolio.html" class="nav-menu__link">Портфолио</a>
+            </li>
+            
+            <li class="nav-menu__item">
+                <a href="" class="nav-menu__link">Контакты</a>
+            </li>
+        </ul>
+            
+            
+  
+<!-- Header contacts -->
+            
         <ul class="contacts__header">
             <li class="contacts__header-list">
-                <a class="contacts__header-link" href="mailto:info@devstudio.com">
-                    <svg class="contacts__header-icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-        
-            <li class="contacts__header-list">
-                <a class="contacts__header-link" href="tel:+380961111111">
+                <a class="contacts__header-link-tel" href="tel:+380961111111">
                     <svg class="contacts__header-icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>
                     +38(096)-111-11-11
                 </a>
             </li>
+            
+             <li class="contacts__header-list">
+                <a class="contacts__header-link-mail" href="mailto:info@devstudio.com">
+                    <svg class="contacts__header-icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            
+            
+         </ul>
+            
+        <ul class="mobile__social">
+            <li class="mobile__social-icon">
+                <a href="" class="mobile__social-link">Instagram</a>
+            </li>
+            
+            <li class="mobile__social-icon">
+                <a href="" class="mobile__social-link">Twitter</a>
+            </li>
+            
+            <li class="mobile__social-icon">
+                <a href="" class="mobile__social-link">Facebook</a>
+            </li>
+            
+            <li class="mobile__social-icon">
+                 <a href="" class="mobile__social-link">LinkedIn</a>
+            </li>
+            
         </ul>
     </div>
+            
+</nav>
+</div>
 </header>
     <main>
         <!-- Фильтры сайта (кнопки) -->
@@ -97,7 +131,7 @@
                     <li class="projects__card-list">
                         <a href="" class="projects__card-link">
                          <div class="img-wrapper">
-                            <img src="./images/port11.jpg" alt="веб сайт" width="370" />
+                            <img src="./images/port11.jpg" alt="веб сайт" width="370" class="img-size"/>
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -112,7 +146,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port22.jpg" alt="дизайн" width="370" />
+                            <img src="./images/port22.jpg" alt="дизайн" width="370" class="img-size" />
                                 <p class="img__wrapper-hidden-text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -128,7 +162,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port33.jpg" alt="приложение" width="370" />
+                            <img src="./images/port33.jpg" alt="приложение" width="370" class="img-size"/>
                                 <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -144,7 +178,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port444.jpg" alt="маркетинг" width="370" />
+                            <img src="./images/port444.jpg" alt="маркетинг" width="370" class="img-size" />
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -161,7 +195,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port55.jpg" alt="приложение" width="370" />
+                            <img src="./images/port55.jpg" alt="приложение" width="370" class="img-size" />
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -178,7 +212,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port66jpg.jpg" alt="веб сайт" width="370" />
+                            <img src="./images/port66jpg.jpg" alt="веб сайт" width="370" class="img-size" />
                                 <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -195,7 +229,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port77jpg.jpg" alt="дизайн" width="370" />
+                            <img src="./images/port77jpg.jpg" alt="дизайн" width="370" class="img-size" />
                                 <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -212,7 +246,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port88.jpg" alt="маркетинг" width="370" />
+                            <img src="./images/port88.jpg" alt="маркетинг" width="370" class="img-size" />
                                 <p class="img__wrapper-hidden-text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -229,7 +263,7 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port99.jpg" alt="приложение" width="370" />
+                            <img src="./images/port99.jpg" alt="приложение" width="370" class="img-size"/>
                                 <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -250,8 +284,8 @@
             <!-- footer -->
             
     <footer class="footer-contacts">
-        <div class="footer-contacts__container">
-            <div>
+        <div class="container footer__contacts">
+            <div class="mobile">
                 <a href="" class="logo-f" lang="en">
                     Web<span class="logo-f__footer">Studio</span>
                 </a>
@@ -321,6 +355,8 @@
 </form>
 </div>
 </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
