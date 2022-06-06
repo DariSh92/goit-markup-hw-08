@@ -193,7 +193,7 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
-    bottom: -5px;
+    bottom: -1px;
     display: none;
 
     @media screen and(min-width: $tablet) {
@@ -218,6 +218,7 @@
     width: 100%;
     position: relative;
     z-index: 5;
+    margin-right: 0;
   }
 }
 // .main-nav {
