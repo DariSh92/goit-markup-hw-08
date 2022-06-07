@@ -116,10 +116,6 @@
     margin-right: 0;
   }
 }
-.mobile {
-  text-align: center;
-  margin-bottom: 60px;
-}
 
 // форма футер
 
@@ -162,6 +158,10 @@
   border-radius: 4px;
   background-color: var(--main-bcg-color);
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
 }
 
 .wrapp__button {
@@ -191,4 +191,23 @@
 
 .wrapp__icon {
   margin-left: 10px;
+}
+
+.mobile {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.tablet {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }

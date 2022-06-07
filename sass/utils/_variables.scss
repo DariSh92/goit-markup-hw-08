@@ -31,3 +31,14 @@ body {
 body.menu-open {
   overflow: hidden;
 }
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-white-color);
+
+  &:nth-child(3) {
+    padding-top: 0;
+    display: none;
+  }
+}

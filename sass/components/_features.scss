@@ -1,19 +1,11 @@
-.section-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--primary-white-color);
-
-  .section-padding:nth-child(3) {
-    padding-top: 0;
-  }
-}
-
 .features {
   list-style: none;
   padding-left: 0;
   margin: 0;
   @media screen and (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
     justify-content: space-between;
   }
 }
@@ -27,13 +19,16 @@
   margin-bottom: 30px;
 }
 
-// .features__list {
-//   margin-right: 30px;
+.features__list {
+  @media screen and(min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
 
-//   .features__list:last-child {
-//     margin-right: 0;
-//   }
-// }
+    .features__list:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 .features__title {
   margin-top: 0px;
