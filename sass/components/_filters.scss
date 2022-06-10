@@ -71,6 +71,10 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .filters__list-button {

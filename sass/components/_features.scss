@@ -2,11 +2,16 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -20,6 +25,11 @@
 }
 
 .features__list {
+  width: 100%;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and(min-width: $tablet) {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
@@ -27,6 +37,10 @@
     .features__list:last-child {
       margin-right: 0;
     }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    margin-bottom: 15px;
   }
 }
 
