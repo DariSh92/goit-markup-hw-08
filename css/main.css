@@ -1013,6 +1013,12 @@ body.menu-open {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
 .features__text {
   font-family: Roboto;
   margin-top: 0;

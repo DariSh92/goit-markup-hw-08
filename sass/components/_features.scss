@@ -55,6 +55,10 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .features__text {
