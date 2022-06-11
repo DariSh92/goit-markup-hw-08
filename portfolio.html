@@ -19,7 +19,7 @@
                         <a href="" class="logo" lang="en">Web<span class="logo__header">Studio</span>
                         </a>
                     
-                        <button type="buton" class="menu__button" data-menu-button>
+                        <button type="button" class="menu__button" data-menu-button>
                             <svg class="menu__button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                                 <use class="icon-cross" href="./images/icon-close40.svg#icon-close40"></use>
                                 <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
@@ -134,7 +134,18 @@
                     <li class="projects__card-list">
                         <a href="" class="projects__card-link">
                          <div class="img-wrapper">
-                            <img src="./images/port11.jpg" alt="веб сайт" width="370" class="img-size"/>
+
+                            <picture>
+                                <source srcset="./images/mobile/texnomob@1x.jpg 1x, ./images/mobile/texnomob@2x.jpg 2x" media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/texnotablet@1x.jpg 1x, ./images/tablet/texnotablet@2x.jpg 2x" media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/texnodesk@1x.jpg 1x , ./images/desktop/texnodesk@1x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/texnomob@1x.jpg" alt="веб сайт" class="img-size">
+                            </picture>
+
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -149,7 +160,20 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port22.jpg" alt="дизайн" width="370" class="img-size" />
+
+                            <picture>
+                                <source srcset="./images/mobile/postermob@1x.jpg 1x, ./images/mobile/postermob@2x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/newortab@1x.jpg 1x, ./images/tablet/newortab@2x.jpg 2x"
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/posterdesk@1x.jpg 1x , ./images/desktop/posterdesk@1x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/postermob@1x.jpg" alt="дизайн" class="img-size">
+                            </picture>
+
                                 <p class="img__wrapper-hidden-text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -165,11 +189,25 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port33.jpg" alt="приложение" width="370" class="img-size"/>
-                                <p class="img__wrapper-hidden-text">
+
+                            <picture>
+                                <source srcset="./images/mobile/seafoodmob@1x.jpg 1x, ./images/mobile/seafoodmob@2x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/seafoodtab@1x.jpg 1x, ./images/tablet/seafoodtab@2x.jpg 2x" 
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/seafooddesk@1x.jpg 1x , ./images/desktop/seafooddesk@1x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/seafoodmob@1x.jpg" alt="приложение" class="img-size">
+                            </picture>
+
+                            <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
-                                </p>
+                            </p>
+
                         </div>
                         <div class="group">
                             <h2 class="group__title">Ресторан Seafood</h2>
@@ -181,7 +219,20 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port444.jpg" alt="маркетинг" width="370" class="img-size" />
+
+                            <picture>
+                                <source srcset="./images/mobile/primemob@1x.jpg 1x, ./images/mobile/primemob@2x.jpg 2x"
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/primetab@1x.jpg 1x, ./images/tablet/primetab@2x.jpg 2x"
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/primedesk@1x.jpg 1x , ./images/desktop/primedesk@2x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/primemob@1x.jpg" alt="маркетинг" class="img-size">
+                            </picture>
+
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -198,7 +249,21 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port55.jpg" alt="приложение" width="370" class="img-size" />
+
+                            <picture>
+                                <source srcset="./images/mobile/boxesmob@1x.jpg 1x, ./images/mobile/boxesmob@1x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/boxestab@1x.jpg 1x, ./images/tablet/boxestab@2x.jpg 2x" 
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/boxdesk1x.jpg 1x , ./images/desktop/boxdesk1x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/boxesmob@1x.jpg" alt="приложение" class="img-size">
+                            </picture>
+
+
                             <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
@@ -215,11 +280,24 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port66jpg.jpg" alt="веб сайт" width="370" class="img-size" />
-                                <p class="img__wrapper-hidden-text">
+
+                            <picture>
+                                <source srcset="./images/mobile/inspirmob@1x.jpg 1x, ./images/mobile/inspirmob@2x.jpg 2x"
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/insptab@1x.jpg 1x, ./images/tablet/insptab@2x.jpg 2x" 
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/inspdesk@1x.jpg 1x , ./images/desktop/inspdesk@2x.jpg 2x" 
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/inspirmob@1x.jpg" alt="веб сайт" class="img-size">
+                            </picture>
+
+                            <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
-                                </p>
+                            </p>
                       </div>
 
                         <div class="group">
@@ -232,11 +310,25 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port77jpg.jpg" alt="дизайн" width="370" class="img-size" />
-                                <p class="img__wrapper-hidden-text">
+
+                            <picture>
+                                <source srcset="./images/mobile/limamob@1x.jpg 1x, ./images/mobile/limamob@2x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/limitedtab@1x.jpg 1x, ./images/tablet/limitedtab@2x.jpg 2x" 
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/limiteddesk@1x.jpg 1x , ./images/desktop/limiteddesk@1x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/limamob@1x.jpg" alt="дизайн" class="img-size">
+                            </picture>
+
+
+                            <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
-                                </p>
+                            </p>
                         </div>
 
                             <div class="group">
@@ -249,11 +341,24 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port88.jpg" alt="маркетинг" width="370" class="img-size" />
-                                <p class="img__wrapper-hidden-text">
+
+                            <picture>
+                                <source srcset="./images/mobile/labmob@1x.jpg 1x, ./images/mobile/labmob@2x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/limitedtab@1x.jpg 1x, ./images/mobile/labmob@2x.jpg 2x"
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/labdesk@1x.jpg 1x , ./images/desktop/labdesk@2x.jpg 2x"
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/labmob@1x.jpg" alt="маркетинг" class="img-size">
+                            </picture>
+
+                            <p class="img__wrapper-hidden-text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
-                                </p>
+                            </p>
                         </div>
 
                         <div class="group">
@@ -266,11 +371,25 @@
                 <li class="projects__card-list">
                     <a href="" class="projects__card-link">
                         <div class="img-wrapper">
-                            <img src="./images/port99.jpg" alt="приложение" width="370" class="img-size"/>
-                                <p class="img__wrapper-hidden-text">
+
+                            <picture>
+                                <source srcset="./images/mobile/growmob@1x.jpg 1x, ./images/mobile/growmob@2x.jpg 2x" 
+                                    media="(max-width:480px)">
+                            
+                                <source srcset="./images/tablet/growtab@1x.jpg 1x, ./images/tablet/growtab@2x.jpg 2x" 
+                                    media="(max-width:768px)">
+                            
+                                <source srcset="./images/desktop/growdesk@1x.jpg 1x , ./images/desktop/growdesk@2x.jpg 2x" 
+                                    media="(max-width:1200px)">
+                            
+                                <img src="./images/mobile/growmob@1x.jpg" alt="приложение" class="img-size">
+                            </picture>
+
+                            <p class="img__wrapper-hidden-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
-                                </p>
+                            </p>
+
                         </div>
                         
                         <div class="group">

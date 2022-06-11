@@ -66,7 +66,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
-  // transition: color var(--duration) var(--time-function);
+  transition: color var(--duration) var(--time-function);
 
   @media screen and (min-width: $tablet) {
     font-weight: 500;
@@ -74,6 +74,9 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    &:hover {
+      color: var(--accent-color);
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -89,7 +92,7 @@
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
-  // transition: color var(--duration) var(--time-function);
+  transition: color var(--duration) var(--time-function);
 
   @media screen and (min-width: $tablet) {
     font-weight: 500;
@@ -98,6 +101,9 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    &:hover {
+      color: var(--accent-color);
+    }
   }
   @media screen and (min-width: $desktop) {
     padding-top: 32px;

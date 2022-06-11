@@ -21,7 +21,7 @@
                 <a href="" class="logo" lang="en">Web<span class="logo__header">Studio</span>
                 </a>
     
-                <button type="buton" class="menu__button" data-menu-button>
+                <button type="button" class="menu__button" data-menu-button>
                     <svg class="menu__button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./images/icon-close40.svg#icon-close40"></use>
                         <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
@@ -168,17 +168,26 @@
             <ul class="example">
                 <li class="example__list">
                     <div class="example__card">
-                        <img src="./images/box1.jpg" alt="разработка верстки" width="370">
-                            <div class="example__text">
-                                <p>Десктопные приложения</p>
-                            </div>
+                     <picture>
+                            <source srcset="./images/desktop/boxdesktop@1x.jpg 1x , ./images/desktop/boxdesktop@2x.jpg 2x" 
+                            media="(min-width:960px)">
+                            <img src="./images/desktop/boxdesktop@1x.jpg" alt="разработка верстки" width="370">
+                     </picture>
+
+                    <div class="example__text">
+                        <p>Десктопные приложения</p>
+                    </div>
 
                     </div>
                 </li>
 
                 <li class="example__list">
                     <div class="example__card">
-                        <img src="./images/box2.jpg" alt="мобильное приложение" width="370">
+                        <picture>
+                            <source srcset="./images/desktop/appdesktop1x.jpg 1x , ./images/desktop/appdesktop2x.jpg 2x"
+                                media="(min-width:960px)">
+                                <img src="./images/desktop/appdesktop1x.jpg" alt="мобильное приложение" width="370">
+                        </picture>
                             <div class="example__text">
                                 <p> Мобильные приложения </p>       
                             </div>
@@ -187,7 +196,11 @@
 
                 <li class="example__list">
                     <div class="example__card">
-                        <img src="./images/box3.jpg" alt="выбор цветой палитры" width="370">
+                        <picture>
+                            <source srcset="./images/desktop/designdesktop@1x.jpg 1x , ./images/desktop/designdesktop@2x.jpg 2x" 
+                                media="(min-width:960px)">
+                            <img src="./images/desktop/designdesktop@1x.jpg" alt="выбор цветой палитры" width="370">
+                        </picture>
                             <div class="example__text">
                                 <p>Дизайнерские решения</p>
                             </div>
@@ -207,7 +220,19 @@
 
     <ul class="team">
         <li class="team__list">
-            <img src="./images/img1.jpg" alt="менеджер" width="270" class="img-size">
+            <picture>
+                <source srcset="./images/mobile/igormob@1x.jpg 1x, ./images/mobile/igormob@2x.jpg 2x"
+                     media="(max-width:480px)">
+
+                <source srcset="./images/tablet/igortab@1x.jpg 1x , ./images/tablet/igortab@2x.jpg 2x" 
+                    media="(max-width:768px)">
+                
+                <source srcset="./images/desktop/igordesktop@1x.jpg 1x ,./images/desktop/igordesktop@2x.jpg 2x" 
+                    media="(max-width:1200px)">
+
+                <img src="./images/mobile/igormob@1x.jpg" alt="менеджер" class="img-size">
+            </picture>
+
                 <div class="team__staff">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                         <p lang="en" class="team__position">Product Designer</p>
@@ -248,7 +273,19 @@
  </li>
 
         <li class="team__list">
-            <img src="./images/img2.jpg" alt="разработчик" width="270" class="img-size">
+            <picture>
+                <source srcset="./images/mobile/olgamob@1x.jpg 1x, ./images/mobile/olgamob@2x.jpg 2x" 
+                    media="(max-width:480px)">
+            
+                <source srcset="./images/tablet/olgatab@1x.jpg 1x , ./images/tablet/olgatab@2x.jpg 2x" 
+                    media="(max-width:768px)">
+            
+                <source srcset="./images/desktop/repinadesktop@1x.jpg 1x ,.images/desktop/repinadesktop@1x.jpg 2x " 
+                    media="(max-width:1200px)">
+            
+                <img src="./images/mobile/olgamob@1x.jpg" alt="менеджер" class="img-size">
+            </picture>
+
             <div class="team__staff">
                 <h3 class="team__name">Ольга Репина</h3>
                     <p lang="en" class="team__position">Frontend Developer</p>
@@ -290,7 +327,19 @@
         </li>
 
          <li class="team__list">
-            <img src="./images/img3.jpg" alt="отдел маркетинга" width="270" class="img-size">
+            <picture>
+                <source srcset="./images/mobile/nikolaymob@1x.jpg 1x, ./images/mobile/nikolaymob@2x.jpg 2x" 
+                    media="(max-width:480px)">
+            
+                <source srcset="./images/tablet/nikolaytab@1x.jpg 1x, ./images/tablet/nikolaytab@2x.jpg 2x" 
+                    media="(max-width:768px)">
+            
+                <source srcset="./images/desktop/nikolaydesktop@1x.jpg 1x , ./images/desktop/nikolaydesktop@2x.jpg 2x" 
+                    media="(max-width:1200px)"> 
+            
+                <img src="./images/mobile/nikolaymob@1x.jpg" alt="менеджер" class="img-size">
+            </picture>
+           
             <div class="team__staff">
                 <h3 class="team__name">Николай Тарасов</h3>
                     <p lang="en" class="team__position">Marketing</p>
@@ -330,7 +379,20 @@
         </li>
 
         <li class="team__list">
-            <img src="./images/img4.jpg" alt="дизайнер" width="270" class="img-size">
+
+            <picture>
+                <source srcset="./images/mobile/mishamob@1x.jpg 1x, ./images/mobile/mishamob@2x.jpg 2x"
+                    media="(max-width:480px)">
+            
+                <source srcset="./images/tablet/mishatab@1x.jpg 1x, ./images/tablet/mishatab@2x.jpg 2x"
+                    media="(max-width:768px)">
+            
+                <source srcset="./images/desktop/mishadesktop@1x.jpg 1x , ./images/desktop/mishadesktop@2x.jpg 2x"
+                    media="(max-width:1200px)">
+            
+                <img src="./images/mobile/mishamob@1x.jpg" alt="менеджер" class="img-size">
+            </picture>
+           
             <div class="team__staff">
                 <h3 class="team__name">Михаил Ермаков</h3>
                     <p lang="en" class="team__position">UI Designer</p>
