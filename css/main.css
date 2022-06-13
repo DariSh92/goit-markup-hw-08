@@ -384,7 +384,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 305px;
+    margin-left: auto;
   }
 }
 
@@ -1058,7 +1058,6 @@ img {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  width: 370px;
 }
 
 .section-padding__title {
@@ -1786,58 +1785,19 @@ img {
 .projects__card-list {
   max-width: 100%;
   margin-bottom: 30px;
-  width: 100%;
-}
-
-.projects__card-list:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects__card-list:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .projects__card-list {
     margin: 15px;
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
   }
-  .projects__card-list + .projects__card-list {
-    margin-left: 30px;
-  }
-}
-
-.projects__card-list:nth-last-child(-n + 2) {
-  margin-bottom: 30px;
-}
-
-.projects__card-list:nth-child(2n + 1) {
-  margin-left: 0;
-}
-
-.projects__card-list:nth-child(2n + 1):last-child {
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .projects__card-list {
-    width: calc((100% - 4 * 15px) / 3);
+    width: calc((100% - 6 * 15px) / 3);
   }
-  .projects__card-list + .projects__card-list {
-    margin-left: 30px;
-  }
-}
-
-.projects__card-list:nth-child(-n + 3) {
-  margin-bottom: 30px;
-}
-
-.projects__card-list:nth-child(3n + 1) {
-  margin-left: 0;
-}
-
-.projects__card-list:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .img-wrapper {
@@ -1919,14 +1879,10 @@ img {
 }
 
 .projects-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1937,16 +1893,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
