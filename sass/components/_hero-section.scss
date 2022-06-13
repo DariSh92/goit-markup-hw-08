@@ -90,12 +90,9 @@
 
 .main-section__title {
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   font-weight: 900;
-  // font-size: 44px;
   font-size: 26px;
-  // line-height: 1.36;
   line-height: 1.61;
   text-transform: uppercase;
   text-align: center;
@@ -108,6 +105,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
   }
 }
 
