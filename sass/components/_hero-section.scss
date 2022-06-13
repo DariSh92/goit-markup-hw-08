@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile/Header@1xmobile.jpg);
+    url(../images/mobile/Header@1xmobile.jpg);
 
   // @media screen and (min-width: $tablet) {
   //   min-width: $tablet;
@@ -30,7 +30,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile/Header@2xmobile.jpg);
+      url(../images/mobile/Header@2xmobile.jpg);
   }
 }
 
@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/Header@1xtablet.jpg);
+      url(../images/tablet/Header@1xtablet.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tablet/Header@2xtablet.jpg);
+        url(../images/tablet/Header@2xtablet.jpg);
     }
   }
 }
@@ -65,13 +65,13 @@
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop/headerdesktop@1x.jpg);
+      url(../images/desktop/headerdesktop@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -83,7 +83,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desktop/headerdesktop@2x.jpg);
+        url(../images/desktop/headerdesktop@2x.jpg);
     }
   }
 }
