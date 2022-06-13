@@ -15,9 +15,9 @@
   width: 370px;
 }
 
-.example__text {
-  margin: 0;
-}
+// .example__text {
+//   margin: 0;
+// }
 
 .section-padding__title {
   margin-top: 0;
@@ -37,6 +37,9 @@
 }
 
 .example__text {
+  width: 370px;
+  height: 70px;
+  margin: 0;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -50,7 +53,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  width: 370px;
-  height: 70px;
 }

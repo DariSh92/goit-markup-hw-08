@@ -22,14 +22,18 @@ body {
   font-size: 14px;
 }
 
-.img {
+body.menu-open {
+  overflow: hidden;
+}
+
+img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-body.menu-open {
-  overflow: hidden;
+.img-size {
+  width: 100%;
 }
 
 .section-padding {
